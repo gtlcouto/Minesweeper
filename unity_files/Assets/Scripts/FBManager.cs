@@ -5,12 +5,11 @@ using Facebook.Unity;
 
 public class FBManager{
 
-	public bool isLoggedIn;
-	public Texture2D texture;
-	public bool hasImage;
-	public string id;
-	public bool hasUserName;
-	public Dictionary<string, object> profile = null;
+	public  bool isLoggedIn;
+	public  Texture2D texture;
+	public  bool hasImage;
+	public  bool hasUserName;
+	public  Dictionary<string, object> profile = null;
 
 	public FBManager()
 	{
@@ -22,7 +21,7 @@ public class FBManager{
 	private void SetInit()
 	{
 		Debug.Log ("FB Init done.");
-		
+
 		if(FB.IsLoggedIn)
 		{
 			//DealWithFBMenus(true);

@@ -35,29 +35,29 @@ public class Tile : MonoBehaviour {
 	void Start () {
 		//name tiles in heirachy to help with debugging
 		gameObject.name = "Tile " + ID.ToString();
-
+		
 		if(inBounds(Grid.tilesAll, ID + tilesPerRow)) 						{ tileUpper = Grid.tilesAll[ID + tilesPerRow]; }
 		if(inBounds(Grid.tilesAll, ID - tilesPerRow)) 						{ tileLower = Grid.tilesAll[ID - tilesPerRow]; }
 		if(inBounds(Grid.tilesAll, ID + 1) && (ID+1) % tilesPerRow != 0)	{ tileRight = Grid.tilesAll[ID + 1]; }
 		if(inBounds(Grid.tilesAll, ID - 1) && ID % tilesPerRow != 0) 		{ tileLeft = Grid.tilesAll[ID - 1]; }
-
+		
 		if(inBounds(Grid.tilesAll, ID + tilesPerRow + 1) && (ID + tilesPerRow + 1) % tilesPerRow != 0) { tileUpperRight = Grid.tilesAll[ID + tilesPerRow + 1]; }
 		if(inBounds(Grid.tilesAll, ID + tilesPerRow - 1) &&     ID % tilesPerRow != 0) { tileUpperLeft  = Grid.tilesAll[ID + tilesPerRow - 1]; }
 		if(inBounds(Grid.tilesAll, ID - tilesPerRow + 1) && (ID+1) % tilesPerRow != 0) { tileLowerRight = Grid.tilesAll[ID - tilesPerRow + 1]; }
 		if(inBounds(Grid.tilesAll, ID - tilesPerRow - 1) &&     ID % tilesPerRow != 0) { tileLowerLeft  = Grid.tilesAll[ID - tilesPerRow - 1]; }
-
+		
 		if(tileUpper)	{ adjacentTiles.Add(tileUpper); }
 		if(tileLower)	{ adjacentTiles.Add(tileLower); }
 		if(tileLeft)	{ adjacentTiles.Add(tileLeft); }
 		if(tileRight)	{ adjacentTiles.Add(tileRight); }
-
+		
 		if(tileUpperLeft)	{ adjacentTiles.Add(tileUpperLeft); }
 		if(tileUpperRight)	{ adjacentTiles.Add(tileUpperRight); }
 		if(tileLowerLeft)	{ adjacentTiles.Add(tileLowerLeft); }
 		if(tileLowerRight)	{ adjacentTiles.Add(tileLowerRight); }
-
+		
 		countMines ();
-
+		
 		displayText.GetComponent<Renderer>().enabled = false;
 		displayFlag.GetComponent<Renderer>().enabled = false;
 	}
@@ -66,6 +66,7 @@ public class Tile : MonoBehaviour {
 	void Update () {
 	
 	}
+	
 
 	private bool inBounds(Tile[] inputArray, int targetID){
 		if (targetID < 0 || targetID >= inputArray.Length) {

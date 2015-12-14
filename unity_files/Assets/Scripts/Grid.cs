@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 public class Grid : MonoBehaviour {
 
 	public Tile tilePrefab;
 	public FBManager fbManager;
+	public LinkSyncSCR connManager;
 	public int numberOfTiles = 10;
 	public float distanceBetweenTiles = 1f;
 	public int tilesPerRow = 4;
@@ -20,20 +22,17 @@ public class Grid : MonoBehaviour {
 	public static int minesMarkedCorrectly;
 	public static int tilesUncovered;
 	public static int minesRemaining;
-
+	public bool bIsGameSetup = false;
+	public TextMesh displayText;
 
 	// Use this for initialization
 	void Awake()
 	{
 		fbManager = new FBManager ();
+		connManager = new LinkSyncSCR ();
 	}
 	void Start () {
 
-		CreateTiles ();
-		minesMarkedCorrectly = 0;
-		tilesUncovered = 0;
-		minesRemaining = numberOfMines;
-		state = "inGame";
 	}
 	
 	// Update is called once per frame
@@ -44,6 +43,16 @@ public class Grid : MonoBehaviour {
 				finishGame();
 			}
 		}
+	}
+
+	void setupGame(){
+		CreateTiles ();
+		minesMarkedCorrectly = 0;
+		tilesUncovered = 0;
+		minesRemaining = numberOfMines;
+		state = "inGame";
+		bIsGameSetup = true;
+
 	}
 
 	void finishGame(){
@@ -114,11 +123,25 @@ public class Grid : MonoBehaviour {
 				GUI.Box(new Rect(10,350,200,50), "Hello " + fbManager.profile["first_name"].ToString() + " " + fbManager.profile["last_name"].ToString());
 				GUI.Box(new Rect(10,410,200,50),  fbManager.profile["email"].ToString());
 				GUI.Box(new Rect(10,470,200,50),  fbManager.profile["id"].ToString());
+			
 			}
 			if (GUI.Button (new Rect (10, 70, 200, 50), "Share")) {
 				fbManager.ShareWithFriends ();
 
 			}
+
+			if(!connManager.connected)
+			{
+				connManager.ConnectToServer();
+			}else {
+				//connected to server
+				if(!bIsGameSetup)
+				{
+				setupGame();
+				}
+
+			}
+
 		} else {
 			if(GUI.Button(new Rect(10,70,200,50), "Facebook Login"))
 			{
@@ -147,6 +170,13 @@ public class Grid : MonoBehaviour {
 
 	void restart(){
 		state = "loading";
+		/*
+		bIsGameSetup = false;
+		foreach(Tile currentTile in tilesAll){
+			currentTile.displayText.GetComponent<Renderer>().enabled = false;
+			currentTile.displayFlag.GetComponent<Renderer>().enabled = false;
+		}
+		*/
 		Application.LoadLevel (Application.loadedLevel);
 	}
 

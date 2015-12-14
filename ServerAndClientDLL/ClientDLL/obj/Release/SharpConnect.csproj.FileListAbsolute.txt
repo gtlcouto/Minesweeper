@@ -2,3 +2,8 @@ c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Re
 c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Release\SharpConnect.pdb
 c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Release\SharpConnect.dll
 c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Release\SharpConnect.pdb
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\ClientDLL\bin\Release\SharpConnect.dll
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\ClientDLL\bin\Release\SharpConnect.pdb
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\ClientDLL\obj\Release\SharpConnect.csprojResolveAssemblyReference.cache
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\ClientDLL\obj\Release\SharpConnect.dll
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\ClientDLL\obj\Release\SharpConnect.pdb

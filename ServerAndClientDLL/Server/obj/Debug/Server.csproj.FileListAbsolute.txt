@@ -7,3 +7,6 @@ c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\D
 c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.exe
 c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.pdb
 c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\frmMain.resources
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\Server\bin\Debug\Server.exe.config
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\Server\obj\Debug\Server.exe
+C:\Unity\NetworkFinalProject\MineSweeper++\ServerAndClientDLL\Server\obj\Debug\Server.pdb

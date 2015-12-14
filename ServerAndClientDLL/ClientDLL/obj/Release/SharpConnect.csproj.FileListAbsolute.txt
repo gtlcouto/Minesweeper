@@ -1,0 +1,4 @@
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Release\SharpConnect.dll
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Release\SharpConnect.pdb
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Release\SharpConnect.dll
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Release\SharpConnect.pdb

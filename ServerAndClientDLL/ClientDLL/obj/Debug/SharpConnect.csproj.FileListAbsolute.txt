@@ -1,0 +1,5 @@
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Debug\SharpConnect.dll
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\bin\Debug\SharpConnect.pdb
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Debug\SharpConnect.csprojResolveAssemblyReference.cache
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Debug\SharpConnect.dll
+c:\users\gtlco\onedrive\documents\visual studio 2012\Projects\Unity\Unity\obj\Debug\SharpConnect.pdb

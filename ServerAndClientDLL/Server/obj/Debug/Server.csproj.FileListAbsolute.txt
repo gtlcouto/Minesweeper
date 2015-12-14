@@ -1,0 +1,9 @@
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\bin\Debug\Server.exe.config
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\bin\Debug\Server.exe
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\bin\Debug\Server.pdb
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.Properties.Resources.resources
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.exe
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\Server.pdb
+c:\Users\gtlco\OneDrive\documents\visual studio 2012\Projects\Unity\Server\obj\Debug\frmMain.resources

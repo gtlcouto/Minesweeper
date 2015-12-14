@@ -12,9 +12,13 @@ INSTRUCTION:
 TO-DO
 
 1- Send game logic to the server. 
+
 2- Server generates mines and assigns it to the facebook id of the user connecting.
+
 3- Client clicks or flags a mine field and send the position and actiontype to the server.
+
 4- Server checks result of click and sends either (game over + mine positions to client / list of revealed nodes )
+
 5- Client receives and updates the board - > back to #3 till games over
 
 -Message Length prefixing

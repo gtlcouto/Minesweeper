@@ -39,9 +39,6 @@ TO-DO
 
 -Message Length prefixing
 
--Save some sort of leaderboard on mysql ( either time to complete or keep reseting the board adding more and more mines)
--view leaderboard buttons which queries mysql db  via http get
--redis?
 
 Hosting is done on my dropbox and facebook account.
 
